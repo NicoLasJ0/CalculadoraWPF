@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="Calculadora" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Grid.Row="3" Click="Button_Click" Height="70" Width="70" Name="uno">1</Button>
+        <Button Grid.Column="1" Grid.Row="3" Click="Button_Click" Height="70" Width="70">2</Button>
+        <Button Grid.Column="2" Grid.Row="3" Click="Button_Click" Height="70" Width="70" Name="tres">3</Button>
+        <Button Grid.Column="3" Grid.Row="3" Click="Button_Click" Height="70" Width="70" Name="cero">0</Button>
+
+        <Button Grid.Column="0" Grid.Row="2" Click="Button_Click" Height="70" Width="70" Name="cuatro">4</Button>
+        <Button Grid.Column="1" Grid.Row="2" Click="Button_Click" Height="70" Width="70" Name="cinco">5</Button>
+        <Button Grid.Column="2" Grid.Row="2" Click="Button_Click" Height="70" Width="70" Name="seis">6</Button>
+        <Button Grid.Column="3" Grid.Row="2" Click="Button_Operacion" Height="70" Width="70" Name="menos">-</Button>
+
+        <Button Grid.Column="0" Grid.Row="1" Click="Button_Click" Height="70" Width="70" Name="siete">7</Button>
+        <Button Grid.Column="1" Grid.Row="1" Click="Button_Click" Height="70" Width="70" Name="ocho">8</Button>
+        <Button Grid.Column="2" Grid.Row="1" Click="Button_Click" Height="70" Width="70" Name="nueve">9</Button>
+
+        <Button Grid.Column="3" Grid.Row="1" Click="Button_Operacion" Height="70" Width="70" Name="divide">/</Button>
+        <Button Grid.Column="4" Grid.Row="2" Click="Button_Operacion" Height="70" Width="70" Name="suma">+</Button>
+        <Button Grid.Column="4" Grid.Row="3" Click="Button_Resultado" Height="70" Width="70" Name="igual">=</Button>
+        <Button Grid.Column="4" Grid.Row="1" Click="Button_Operacion" Height="70" Width="70" Name="multiplica">*</Button>
+        <Button Grid.Column="5" Grid.Row="2" Click="Button_Clear" Height="70" Width="70">C</Button>
+        <Button Grid.Column="5" Grid.Row="3" Click="Button_Punto" Height="70" Width="70">.</Button>
+        <TextBox Grid.Row="0" Grid.ColumnSpan="6" Name="texto" FontSize="50" IsReadOnly="True"></TextBox>
+    </Grid>
+</Window>
